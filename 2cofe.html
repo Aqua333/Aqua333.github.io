@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head> <meta name="viewport" content="width=device-width"/>
+    
+    <meta charset="utf-8" />
+        <title>Кофейная Карта</title>
+   
+    <style> body {
+       font-size:120%; 
+        color: red;
+        background:url(https://img4.goodfon.ru/original/640x960/8/2b/background-zerna-texture-coffee-beans-kofe-fon-roasted-wood.jpg );
+        background-size:100%;
+        background-color:gray;
+       х
+        }
+        form {
+        color: green;
+        }
+        img {
+       font-size:120%;
+        border-radius: 20px; 
+        background-color: white;
+       
+        }
+p.cursive {
+    color: yellow;
+    font-size:120%;
+}
+.b1 {
+	border-radius:6px;
+	background-color: yellow;
+	}
+.butt {
+	border-radius:6px;
+	background-color: green;
+	}
+.ch{
+	font-size:140%;
+	font-style:italic;
+	}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2S65LKC95H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2S65LKC95H');
+</script>
+    </style>
+    </head> <script type=text/javascript>var size = prompt("Введите размер стакана кофе: 250,350,450");
+var cost = 0;
+switch (size) {
+    case"250":
+    {
+    cost +=100;
+    document.write("<img src='https://c7.hotpng.com/preview/177/385/218/turkish-coffee-espresso-instant-coffee-latte-coffee-thumbnail.jpg' width ='120' height='120'/>250ml.");
+ }
+break;
+case"350":
+    {
+    cost +=150;
+    document.write("<img src='https://c7.hotpng.com/preview/177/385/218/turkish-coffee-espresso-instant-coffee-latte-coffee-thumbnail.jpg' width ='150' height='150'/>350ml.");
+ }
+break;
+case"450":
+    {
+    cost +=180;
+    document.write("<img src='https://c7.hotpng.com/preview/177/385/218/turkish-coffee-espresso-instant-coffee-latte-coffee-thumbnail.jpg' width ='180' height='180'/> 450ml.");
+ }
+break;
+default:
+{
+    alert ("неверный выбор")
+}
+break 
+} 
+if (cost !=0){document.write ("<p>Стоимость: "+cost+"рублей.<p> Спасибо");}
+ </script>
+    <body>
+    <h6 class="ch"><strong>Благодарим за выбор</strong></h6>
+     <p class="cursive">  Для совершения нового выбора нажмите ниже:</p>
+
+    
+    <form method="GET" document.location.reload()">
+    
+    <p><input type="submit" value="Выбрать кофе" class="b1"></p></form>
+
+</body>  <script>
+	function HomeButton()
+	{location.href="cafe2.html";}
+    </script><input class = "butt" TYPE="button" VALUE="На Главную" ONCLICK="HomeButton()">
+</html>
